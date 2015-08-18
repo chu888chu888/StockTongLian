@@ -90,6 +90,7 @@
 		B93C25D11B82DB1D0076E603 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = B93C25C51B82DB1D0076E603 /* NSObject+MJKeyValue.m */; };
 		B93C25D21B82DB1D0076E603 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B93C25C71B82DB1D0076E603 /* NSObject+MJProperty.m */; };
 		B93C25D31B82DB1D0076E603 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B93C25C91B82DB1D0076E603 /* NSString+MJExtension.m */; };
+		B9B310D91B8326F100F7AFB1 /* getSecIDNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B310D81B8326F100F7AFB1 /* getSecIDNib.xib */; };
 		B9D0B0261B82FF5000243DA0 /* FundInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D0B0251B82FF5000243DA0 /* FundInfo.m */; };
 		B9D0B02C1B83063B00243DA0 /* FundData.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D0B02B1B83063B00243DA0 /* FundData.m */; };
 		B9D0B0471B83176700243DA0 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D0B0301B83176700243DA0 /* JSONModel.m */; };
@@ -281,6 +282,7 @@
 		B93C25C71B82DB1D0076E603 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
 		B93C25C81B82DB1D0076E603 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
 		B93C25C91B82DB1D0076E603 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		B9B310D81B8326F100F7AFB1 /* getSecIDNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = getSecIDNib.xib; sourceTree = "<group>"; };
 		B9D0B0241B82FF5000243DA0 /* FundInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundInfo.h; sourceTree = "<group>"; };
 		B9D0B0251B82FF5000243DA0 /* FundInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundInfo.m; sourceTree = "<group>"; };
 		B9D0B02A1B83063B00243DA0 /* FundData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundData.h; sourceTree = "<group>"; };
@@ -706,6 +708,7 @@
 		B921EB1C1B81C4F1002EC5A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B9B310D81B8326F100F7AFB1 /* getSecIDNib.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -912,6 +915,7 @@
 				B921E9B71B81C1C8002EC5A5 /* LaunchScreen.xib in Resources */,
 				B9D0B0521B831B5D00243DA0 /* Demo.json in Resources */,
 				B921EAC01B81C2D2002EC5A5 /* LICENSE in Resources */,
+				B9B310D91B8326F100F7AFB1 /* getSecIDNib.xib in Resources */,
 				B921E9B41B81C1C8002EC5A5 /* Images.xcassets in Resources */,
 				B921EAC91B81C2D2002EC5A5 /* LICENSE in Resources */,
 			);

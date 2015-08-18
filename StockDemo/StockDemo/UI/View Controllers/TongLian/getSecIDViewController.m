@@ -11,21 +11,36 @@
 #import "FundData.h"
 #import "FundInfo.h"
 @interface getSecIDViewController ()
-
+@property(nonatomic,strong) UITextField * txtticker;
+@property(nonatomic,strong) UIButton * btnSearch;
+@property(nonatomic,strong) UITextView * txtResource;
 @end
 
 @implementation getSecIDViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    NSLog(@"证券编码及基本上市信息");
+- (void) loadView
+{
+    self.view = [[[NSBundle mainBundle] loadNibNamed:@"getSecIDNib" owner:self options:nil] lastObject];
+    _txtticker=(UITextField *)[self.view viewWithTag:101];
+    _btnSearch=(UIButton *)[self.view viewWithTag:102];
+    _txtResource=(UITextView *)[self.view viewWithTag:103];
+    
+    [_btnSearch addTarget:self action:@selector(btnSearch:) forControlEvents:UIControlEventTouchDown];
+    _txtticker.text=@"000001";
+    
+}
+-(void)btnSearch:(UIButton *)sender
+{
+    NSLog(@"股票代码:%@",_txtticker.text);
+    
     
     AFHTTPRequestOperationManager *operationManager = [AFHTTPRequestOperationManager manager];
     
-    NSDictionary *params = @{@"username": @"13145877854",@"client_id":@"ObpJAwJ7WP4s4Rwd",
-                             @"client_secret":@"WMv9vbYIFz8ugpwl6zDNThzn4KLoxLTV",
-                             @"grant_type":@"password",@"password":@"888888"};
+    NSDictionary *params = @{
+                             @"field": @"",
+                             @"secID":@"",
+                             @"ticker":_txtticker.text,
+                             @"etfLof":@"",
+                             @"listStatusCd":@""};
     
     operationManager.requestSerializer = [AFHTTPRequestSerializer serializer];
     
@@ -35,46 +50,30 @@
     operationManager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"application/json"];
     
     
-    [operationManager GET:@"https://api.wmcloud.com/data/v1/api/fund/getFund.json?field&secID&ticker=000001&etfLof&listStatusCd"
-                   parameters:nil
-                   success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                       NSLog(@"Json:%@",responseObject);
-                       
-                       /*
-                        NSString *access_tokenStr = responseObject[@"access_token"];
-                        NSString *expires_inStr = responseObject[@"expires_in"];
-                        NSString *refresh_tokenStr = responseObject[@"refresh_token"];
-                        NSString *token_typeStr = responseObject[@"token_type"];
-                        */
-                       /*
-                        NSLog(@"--------------------------");
-                        NSString* json = @"{\"access_token\":\"access_token\", \"expires_in\":\"access_token\",\"refresh_token\":\"access_token\",\"token_type\":\"access_token\",}";
-                        HttpReturnModel *returnModel=[[HttpReturnModel alloc]initWithString:returnJsonStr error:nil];
-                        NSLog(@"Model:%@",returnModel.access_token);
-                        */
-                       /*
-                        NSString *returnStr=[self dictionaryOrArrayToJSONString:responseObject];
-                        HttpReturnModel *returnModel=[[HttpReturnModel alloc]initWithString:returnStr error:nil];
-                        NSLog(@"access_token:%@",returnModel.access_token);*/
-                       
-                       //FundData * fundClass=[FundData objectWithKeyValues:[responseObject objectForKey:@"data"]];
-                       
-                       //NSLog(@"%@",responseObject[@"data"]);
-                       //FundData * fundClass=[FundData objectWithKeyValues:[responseObject objectForKey:@"data"]];
-                       //FundInfo * fundClass=[[FundInfo alloc] initWithString:responseObject error:nil];
-
-                       NSLog(@"retCode :%@",responseObject[@"retCode"]);
-                       NSLog(@"retMsg :%@",responseObject[@"retMsg"]);
-                       NSLog(@"data :%@",responseObject[@"data"][0]);
-                       NSLog(@"investField:%@",[responseObject[@"data"][0] objectForKey:@"investField"]);
-
-                   }
-                   failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                       
-                       NSLog(@"Error: %@", [error description]);
-                       
-                   }
+    [operationManager GET:@"https://api.wmcloud.com/data/v1/api/fund/getFund.json"
+                  parameters:params
+                  success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                      /*
+                      NSLog(@"Json:%@",responseObject);
+                      NSLog(@"retCode :%@",responseObject[@"retCode"]);
+                      NSLog(@"retMsg :%@",responseObject[@"retMsg"]);
+                      NSLog(@"data :%@",responseObject[@"data"][0]);
+                      NSLog(@"investField:%@",[responseObject[@"data"][0] objectForKey:@"investField"]);
+                       */
+                      _txtResource.text=[responseObject[@"data"][0] objectForKey:@"investField"];
+                      
+                  }
+                  failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                      
+                      NSLog(@"Error: %@", [error description]);
+                      
+                  }
      ];
+}
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {
