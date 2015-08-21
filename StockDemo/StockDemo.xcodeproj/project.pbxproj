@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B91E01C91B86F8C800E9FE91 /* StockGetSecIDSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B91E01C81B86F8C800E9FE91 /* StockGetSecIDSource.m */; };
 		B921E9AC1B81C1C8002EC5A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B921E9AB1B81C1C8002EC5A5 /* main.m */; };
 		B921E9AF1B81C1C8002EC5A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B921E9AE1B81C1C8002EC5A5 /* AppDelegate.m */; };
 		B921E9B21B81C1C8002EC5A5 /* StockDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B921E9B01B81C1C8002EC5A5 /* StockDemo.xcdatamodeld */; };
@@ -79,7 +80,6 @@
 		B921EAFF1B81C2D2002EC5A5 /* IncludeTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B921EA961B81C2D2002EC5A5 /* IncludeTools.m */; };
 		B921EB401B81C631002EC5A5 /* MasterPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B921EB3F1B81C631002EC5A5 /* MasterPageViewController.m */; };
 		B921EB471B81D970002EC5A5 /* TongLianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B921EB461B81D970002EC5A5 /* TongLianViewController.m */; };
-		B93C25B31B82D1170076E603 /* getSecIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B93C25B21B82D1170076E603 /* getSecIDViewController.m */; };
 		B93C25CA1B82DB1D0076E603 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B93C25B71B82DB1D0076E603 /* MJExtensionConst.m */; };
 		B93C25CB1B82DB1D0076E603 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = B93C25B91B82DB1D0076E603 /* MJFoundation.m */; };
 		B93C25CC1B82DB1D0076E603 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B93C25BB1B82DB1D0076E603 /* MJProperty.m */; };
@@ -90,7 +90,9 @@
 		B93C25D11B82DB1D0076E603 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = B93C25C51B82DB1D0076E603 /* NSObject+MJKeyValue.m */; };
 		B93C25D21B82DB1D0076E603 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B93C25C71B82DB1D0076E603 /* NSObject+MJProperty.m */; };
 		B93C25D31B82DB1D0076E603 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B93C25C91B82DB1D0076E603 /* NSString+MJExtension.m */; };
-		B9B310D91B8326F100F7AFB1 /* getSecIDNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B310D81B8326F100F7AFB1 /* getSecIDNib.xib */; };
+		B97FED371B845CE10069D661 /* getSecIDNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = B97FED361B845CE10069D661 /* getSecIDNib.xib */; };
+		B97FED3A1B845D630069D661 /* getSecIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97FED391B845D630069D661 /* getSecIDViewController.m */; };
+		B97FED3D1B846AA80069D661 /* StockBaseSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B97FED3C1B846AA80069D661 /* StockBaseSource.m */; };
 		B9D0B0261B82FF5000243DA0 /* FundInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D0B0251B82FF5000243DA0 /* FundInfo.m */; };
 		B9D0B02C1B83063B00243DA0 /* FundData.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D0B02B1B83063B00243DA0 /* FundData.m */; };
 		B9D0B0471B83176700243DA0 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D0B0301B83176700243DA0 /* JSONModel.m */; };
@@ -103,7 +105,6 @@
 		B9D0B04E1B83176700243DA0 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D0B0411B83176700243DA0 /* JSONModel+networking.m */; };
 		B9D0B04F1B83176700243DA0 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D0B0441B83176700243DA0 /* JSONKeyMapper.m */; };
 		B9D0B0501B83176700243DA0 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D0B0461B83176700243DA0 /* JSONValueTransformer.m */; };
-		B9D0B0521B831B5D00243DA0 /* Demo.json in Resources */ = {isa = PBXBuildFile; fileRef = B9D0B0511B831B5D00243DA0 /* Demo.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B91E01C71B86F8C800E9FE91 /* StockGetSecIDSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockGetSecIDSource.h; sourceTree = "<group>"; };
+		B91E01C81B86F8C800E9FE91 /* StockGetSecIDSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockGetSecIDSource.m; sourceTree = "<group>"; };
 		B921E9A61B81C1C8002EC5A5 /* StockDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B921E9AA1B81C1C8002EC5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B921E9AB1B81C1C8002EC5A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -259,8 +262,6 @@
 		B921EB3F1B81C631002EC5A5 /* MasterPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterPageViewController.m; path = MasterPage/MasterPageViewController.m; sourceTree = "<group>"; };
 		B921EB451B81D970002EC5A5 /* TongLianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TongLianViewController.h; path = TongLian/TongLianViewController.h; sourceTree = "<group>"; };
 		B921EB461B81D970002EC5A5 /* TongLianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TongLianViewController.m; path = TongLian/TongLianViewController.m; sourceTree = "<group>"; };
-		B93C25B11B82D1170076E603 /* getSecIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = getSecIDViewController.h; path = TongLian/getSecIDViewController.h; sourceTree = "<group>"; };
-		B93C25B21B82D1170076E603 /* getSecIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = getSecIDViewController.m; path = TongLian/getSecIDViewController.m; sourceTree = "<group>"; };
 		B93C25B51B82DB1D0076E603 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
 		B93C25B61B82DB1D0076E603 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
 		B93C25B71B82DB1D0076E603 /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
@@ -282,7 +283,11 @@
 		B93C25C71B82DB1D0076E603 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
 		B93C25C81B82DB1D0076E603 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
 		B93C25C91B82DB1D0076E603 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
-		B9B310D81B8326F100F7AFB1 /* getSecIDNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = getSecIDNib.xib; sourceTree = "<group>"; };
+		B97FED361B845CE10069D661 /* getSecIDNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = getSecIDNib.xib; sourceTree = "<group>"; };
+		B97FED381B845D630069D661 /* getSecIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getSecIDViewController.h; sourceTree = "<group>"; };
+		B97FED391B845D630069D661 /* getSecIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = getSecIDViewController.m; sourceTree = "<group>"; };
+		B97FED3B1B846AA80069D661 /* StockBaseSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockBaseSource.h; sourceTree = "<group>"; };
+		B97FED3C1B846AA80069D661 /* StockBaseSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockBaseSource.m; sourceTree = "<group>"; };
 		B9D0B0241B82FF5000243DA0 /* FundInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundInfo.h; sourceTree = "<group>"; };
 		B9D0B0251B82FF5000243DA0 /* FundInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundInfo.m; sourceTree = "<group>"; };
 		B9D0B02A1B83063B00243DA0 /* FundData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundData.h; sourceTree = "<group>"; };
@@ -308,7 +313,6 @@
 		B9D0B0441B83176700243DA0 /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
 		B9D0B0451B83176700243DA0 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
 		B9D0B0461B83176700243DA0 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
-		B9D0B0511B831B5D00243DA0 /* Demo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Demo.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -668,32 +672,12 @@
 		B921EB0A1B81C4F1002EC5A5 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				B921EB0B1B81C4F1002EC5A5 /* Discover List */,
-				B921EB131B81C4F1002EC5A5 /* Movies Details */,
-				B921EB171B81C4F1002EC5A5 /* Related Movies */,
+				B97FED3B1B846AA80069D661 /* StockBaseSource.h */,
+				B97FED3C1B846AA80069D661 /* StockBaseSource.m */,
+				B91E01C71B86F8C800E9FE91 /* StockGetSecIDSource.h */,
+				B91E01C81B86F8C800E9FE91 /* StockGetSecIDSource.m */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		B921EB0B1B81C4F1002EC5A5 /* Discover List */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Discover List";
-			sourceTree = "<group>";
-		};
-		B921EB131B81C4F1002EC5A5 /* Movies Details */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Movies Details";
-			sourceTree = "<group>";
-		};
-		B921EB171B81C4F1002EC5A5 /* Related Movies */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Related Movies";
 			sourceTree = "<group>";
 		};
 		B921EB1B1B81C4F1002EC5A5 /* UI */ = {
@@ -708,7 +692,7 @@
 		B921EB1C1B81C4F1002EC5A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B9B310D81B8326F100F7AFB1 /* getSecIDNib.xib */,
+				B97FED351B845CBF0069D661 /* ZhengQuanGaiKuangView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -734,11 +718,9 @@
 		B921EB441B81D911002EC5A5 /* TongLianPage */ = {
 			isa = PBXGroup;
 			children = (
+				B97FED341B845C8B0069D661 /* ZhengQuanGaiKuang */,
 				B921EB451B81D970002EC5A5 /* TongLianViewController.h */,
 				B921EB461B81D970002EC5A5 /* TongLianViewController.m */,
-				B93C25B11B82D1170076E603 /* getSecIDViewController.h */,
-				B93C25B21B82D1170076E603 /* getSecIDViewController.m */,
-				B9D0B0511B831B5D00243DA0 /* Demo.json */,
 			);
 			name = TongLianPage;
 			sourceTree = "<group>";
@@ -769,6 +751,24 @@
 				B93C25C91B82DB1D0076E603 /* NSString+MJExtension.m */,
 			);
 			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		B97FED341B845C8B0069D661 /* ZhengQuanGaiKuang */ = {
+			isa = PBXGroup;
+			children = (
+				B97FED381B845D630069D661 /* getSecIDViewController.h */,
+				B97FED391B845D630069D661 /* getSecIDViewController.m */,
+			);
+			name = ZhengQuanGaiKuang;
+			path = TongLian/ZhengQuanGaiKuang;
+			sourceTree = "<group>";
+		};
+		B97FED351B845CBF0069D661 /* ZhengQuanGaiKuangView */ = {
+			isa = PBXGroup;
+			children = (
+				B97FED361B845CE10069D661 /* getSecIDNib.xib */,
+			);
+			path = ZhengQuanGaiKuangView;
 			sourceTree = "<group>";
 		};
 		B9D0B02D1B83176700243DA0 /* JSONModel */ = {
@@ -912,10 +912,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B921EAAF1B81C2D2002EC5A5 /* LICENSE in Resources */,
+				B97FED371B845CE10069D661 /* getSecIDNib.xib in Resources */,
 				B921E9B71B81C1C8002EC5A5 /* LaunchScreen.xib in Resources */,
-				B9D0B0521B831B5D00243DA0 /* Demo.json in Resources */,
 				B921EAC01B81C2D2002EC5A5 /* LICENSE in Resources */,
-				B9B310D91B8326F100F7AFB1 /* getSecIDNib.xib in Resources */,
 				B921E9B41B81C1C8002EC5A5 /* Images.xcassets in Resources */,
 				B921EAC91B81C2D2002EC5A5 /* LICENSE in Resources */,
 			);
@@ -939,6 +938,7 @@
 				B921EABA1B81C2D2002EC5A5 /* AFOAuth2Manager.m in Sources */,
 				B921EAAA1B81C2D2002EC5A5 /* AFSecurityPolicy.m in Sources */,
 				B921EAD91B81C2D2002EC5A5 /* NSMutableArray+SWUtilityButtons.m in Sources */,
+				B97FED3D1B846AA80069D661 /* StockBaseSource.m in Sources */,
 				B921EAB41B81C2D2002EC5A5 /* UIButton+AFNetworking.m in Sources */,
 				B921EAE51B81C2D2002EC5A5 /* NSString+MD5.m in Sources */,
 				B921EADE1B81C2D2002EC5A5 /* SWUtilityButtonView.m in Sources */,
@@ -955,7 +955,6 @@
 				B921EAE21B81C2D2002EC5A5 /* NSBundle+Loader.m in Sources */,
 				B921EAD11B81C2D2002EC5A5 /* SDWebImageManager.m in Sources */,
 				B921EABD1B81C2D2002EC5A5 /* UITableView+DHSmartScreenshot.m in Sources */,
-				B93C25B31B82D1170076E603 /* getSecIDViewController.m in Sources */,
 				B921EAA61B81C2D2002EC5A5 /* AFHTTPRequestOperation.m in Sources */,
 				B9D0B02C1B83063B00243DA0 /* FundData.m in Sources */,
 				B9D0B04C1B83176700243DA0 /* JSONAPI.m in Sources */,
@@ -967,6 +966,7 @@
 				B93C25CC1B82DB1D0076E603 /* MJProperty.m in Sources */,
 				B921EACB1B81C2D2002EC5A5 /* NSData+ImageContentType.m in Sources */,
 				B9D0B04D1B83176700243DA0 /* JSONHTTPClient.m in Sources */,
+				B91E01C91B86F8C800E9FE91 /* StockGetSecIDSource.m in Sources */,
 				B9D0B04E1B83176700243DA0 /* JSONModel+networking.m in Sources */,
 				B921EAE61B81C2D2002EC5A5 /* NSString+STRegex.m in Sources */,
 				B921EAD61B81C2D2002EC5A5 /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -1019,6 +1019,7 @@
 				B921EAE11B81C2D2002EC5A5 /* NSArray+SafeValues.m in Sources */,
 				B921EAD41B81C2D2002EC5A5 /* UIImage+GIF.m in Sources */,
 				B921EABE1B81C2D2002EC5A5 /* UIView+DHSmartScreenshot.m in Sources */,
+				B97FED3A1B845D630069D661 /* getSecIDViewController.m in Sources */,
 				B921EABF1B81C2D2002EC5A5 /* CSLinearLayoutView.m in Sources */,
 				B921EAB11B81C2D2002EC5A5 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				B921EACD1B81C2D2002EC5A5 /* SDWebImageCompat.m in Sources */,

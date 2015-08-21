@@ -23,13 +23,13 @@
         self.navigationItem.title=@"证券概况";
 
         items=[[NSMutableArray alloc] initWithObjects:@"getSecIDViewController",
-               @"UIKitPrjUIDatePickerViewController",
+               @"getSecID2ViewController",
                @"OperationTableViewController",
                @"CustomerTableViewController",
                @"ContentViewCustomerTableViewController", nil];
         DetailItems=[[NSMutableArray alloc]
                      initWithObjects:@"1-证券编码及基本上市信息",
-                     @"2-日期选择组件演示",
+                     @"2-证券编码及基本上市信息",
                      @"3-表格-演示追加数据删除数据演示",
                      @"4-表格-自定义Title表头",
                      @"5-表格-自定义内容表格", nil];
